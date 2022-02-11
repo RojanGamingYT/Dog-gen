@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dogtionary | Sujal Goel</title>
+    <link rel="icon" type="img/png" href="./assets/dog.png">
+    <link rel="stylesheet" href="./public/style/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/jdq7cig.css">
+    <meta name=”theme-color” content=”#29263e>
+</head>
+<body>
+    <main id="main">
+        <h1>The Online Dogtionary 🐶</h1>
+        <form onsubmit="doggify(); return false;">
+            <select class="select" id="breeds">
+                <option value="random">Random</option>
+            </select>
+            <input type="submit" value="Get the dog!">
+        </form>
+        <div class="wrapper">
+            <img id="dog-image">
+        </div>
+    </main>
+    <footer class="footer">
+        <p>This project was made by <a href="https://sujalgoel.ml" target="_blank" style="text-decoration:none;">Sujal Goel</a><br>using the <a href="https://dog.ceo/dog-api/" target="_blank"style="text-decoration:none;">dog.ceo</a> API!
+        </p>
+    </footer>
+    <script src="./public/js/populate-select.js"></script>
+    <script src="./public/js/fetch-dog.js"></script>
+</body>
+</html>
